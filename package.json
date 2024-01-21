@@ -6,17 +6,26 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon — exec babel-node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "mongodb": "^6.3.0",
     "nodemon": "^3.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
+    "@babel/eslint-parser": "^7.23.3",
     "@babel/node": "^7.22.19",
-    "@babel/preset-env": "^7.23.8"
+    "@babel/preset-env": "^7.23.8",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "mongoose": "^8.1.0"
   }
 }
